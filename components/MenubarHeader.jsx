@@ -11,10 +11,10 @@ export default function MenubarHeader() {
   return (
     <>
       <div className="flex flex-col w-full flex-1">
-        <div className="mt-16 h-20 md:hidden">
+        <div className="mt-12 h-20 md:hidden">
           <SearchInput
             placeholder="What are you looking for?"
-            className="lg:max-w-[500px] w-full md:hidden p-4 hover:bg-white"
+            className="lg:max-w-[500px]  w-full md:hidden p-4 hover:bg-white"
             content="Shots"
             iconSrc="/assets/arrow-down.png"
             imgSrc="/assets/searchicon1.png"
@@ -25,12 +25,11 @@ export default function MenubarHeader() {
             radius="md"
             size="md"
             variant="bordered"
-        className="border-[1px] border-gray-300 shadow-none"
+            className=" bg-white border-small h-[40px] w-[115px]"
             IconSrc="/assets/arrow-down.png"
             IconClassName="w-4 h-4"
             content="Popular"
           />
-
           <div>
             <div className="space-x-2 hidden md:flex">
               {categories.map((category, index) => (
@@ -43,13 +42,12 @@ export default function MenubarHeader() {
               ))}
             </div>
           </div>
-
           <div>
             <Filters
               radius="full"
               size="md"
               variant="bordered"
-              className=""
+              className=" bg-white border-small h-[40px] w-[100px]"
               IconSrc="/assets/Filters.png"
               IconClassName="w-5 h-5"
               content="Filters"

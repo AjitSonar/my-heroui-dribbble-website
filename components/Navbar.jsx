@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <>
       <div className="flex flex-col w-full relative">
-        <div className="flex justify-between w-full px-4 md:px-10 items-center ">
+        <div className="flex justify-between w-full px-6 md:px-10 items-center ">
           <div className="flex flex-1 items-center justify-center">
             <div className="lg:hidden -ml-5 ">
               <Button variant="light" size="sm" onPress={handleClick}>
@@ -102,12 +102,12 @@ export default function Navbar() {
               radius="full"
               size="lg"
               variant="solid"
-              className="bg-black text-[14px] text-white mt-2 md:mt-0"
+              className="bg-black text-[14px] w-[90px] h-[40px] text-white mt-2 md:mt-0"
               content=" Log in"
             />
           </div>
           {isOpen && (
-            <div className="lg:hidden bg-white  pt-2 border-1 mt-12 h-auto w-full flex flex-col items-start absolute top-7 left-0 z-50">
+            <div className="lg:hidden bg-white  pt-2 border-1 mt-12 h-auto w-full flex flex-col items-start absolute top-3 left-0 z-50">
               <div className="">
                 <div className="flex flex-col">
                   {squareIconButtons.map((button, index) => (
