@@ -9,7 +9,7 @@ export default function CardBody(props) {
       <div className="">
         <Icon
           src={props.image}
-          className="sm:w-[455px] sm:h-[340px] w-[350px] h-[280px]"
+          className="sm:w-[400px] sm:h-[300px] w-[350px] h-[280px]"
           alt="Logo"
         />
       </div>

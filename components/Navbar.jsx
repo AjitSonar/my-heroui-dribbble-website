@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <>
       <div className="flex flex-col w-full relative">
-        <div className="flex justify-between w-full px-5 md:px-10 items-center ">
+        <div className="flex justify-between w-full px-2 md:px-10 items-center ">
           <div className="flex flex-1 items-center justify-center">
             <div className="lg:hidden ">
               <Button variant="light" size="sm" onPress={handleClick}>
