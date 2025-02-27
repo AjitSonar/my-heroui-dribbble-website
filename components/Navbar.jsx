@@ -24,16 +24,16 @@ export default function Navbar() {
   return (
     <>
       <div className="flex flex-col w-full relative">
-        <div className="flex justify-between w-full px-2 md:px-10 items-center ">
+        <div className="flex justify-between w-full px-4 md:px-10 items-center ">
           <div className="flex flex-1 items-center justify-center">
-            <div className="lg:hidden ">
+            <div className="lg:hidden -ml-5 ">
               <Button variant="light" size="sm" onPress={handleClick}>
                 {isOpen ? (
                   <X />
                 ) : (
                   <Icon
                     src="/assets/menu.png"
-                    className="w-8 h-8 mt-2"
+                    className="w-8 h-7  mt-2"
                     alt="Logo"
                   />
                 )}
@@ -49,13 +49,19 @@ export default function Navbar() {
             <div className="ml-7 flex-grow">
               <SearchInput
                 placeholder="What are you looking for?"
-                className="lg:max-w-[600px] w-full hidden md:block p-4 placeholder:font-semibold"
                 content="Shots"
                 iconSrc="/assets/arrow-down.png"
                 imgSrc="/assets/searchicon1.png"
+                className="lg:max-w-[600px] w-full hidden md:block p-4"
+                // classNames={{
+                //   // base: "w-full border border-gray-300 rounded-lg p-10",
+                //   label: "text-gray-700 font-semibold text-sm",
+                //   input: "w-full p-2 rounded-full focus:ring-1 focus:ring-blue-500 border-gray-300 hover:bg-white transition-all",
+                //   // errorMessage: "text-red-500 text-xs mt-1"
+                // }}
               />
             </div>
-            <div className="hidden flex-grow -ml-5 lg:flex">
+            <div className="hidden flex-grow  lg:flex">
               <div className="flex space-x-2">
                 {squareIconButtons.map((button, index) => (
                   <SquareIconButton
@@ -96,7 +102,7 @@ export default function Navbar() {
               radius="full"
               size="lg"
               variant="solid"
-              className="bg-black text-white mt-2 md:mt-0"
+              className="bg-black text-[14px] text-white mt-2 md:mt-0"
               content=" Log in"
             />
           </div>
@@ -132,16 +138,6 @@ export default function Navbar() {
             </div>
           )}
         </div>
-
-        {/* <div className=" h-20 md:hidden sticky top-0 z-50">
-          <SearchInput
-            placeholder="What are you looking for?"
-            className="lg:max-w-[500px] w-full md:hidden p-4"
-            content="Shots"
-            iconSrc="/assets/arrow-down.png"
-            imgSrc="/assets/searchicon1.png"
-          />
-        </div> */}
       </div>
     </>
   );

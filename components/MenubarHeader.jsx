@@ -5,6 +5,7 @@ import PopularButton from "@/ReusableComponents/PopularButton";
 import Filters from "@/ReusableComponents/Filters";
 import RoundedButton from "@/ReusableComponents/RoundedButton";
 import SearchInput from "@/ReusableComponents/SearchInput";
+import { Divider } from "@heroui/react";
 
 export default function MenubarHeader() {
   return (
@@ -13,17 +14,18 @@ export default function MenubarHeader() {
         <div className="mt-16 h-20 md:hidden">
           <SearchInput
             placeholder="What are you looking for?"
-            className="lg:max-w-[500px] w-full md:hidden p-4"
+            className="lg:max-w-[500px] w-full md:hidden p-4 hover:bg-white"
             content="Shots"
             iconSrc="/assets/arrow-down.png"
             imgSrc="/assets/searchicon1.png"
           />
         </div>
-        <div className="flex justify-between items-center  md:mt-20 px-8 md:px-20 h-16 w-full">
+        <div className="flex justify-between items-center  md:mt-20 px-4 md:px-20 h-16 w-full">
           <PopularButton
             radius="md"
             size="md"
             variant="bordered"
+        className="border-[1px] border-gray-300 shadow-none"
             IconSrc="/assets/arrow-down.png"
             IconClassName="w-4 h-4"
             content="Popular"
@@ -54,6 +56,7 @@ export default function MenubarHeader() {
             />
           </div>
         </div>
+        <Divider className="md:hidden mb-4 mt-2 mr-20 ml-4 h-[0.5px] bg-gray-200" />
         <div className=" max-w-full md:hidden flex justify-center">
           {categories.map((category, index) => (
             <RoundedButton
