@@ -16,7 +16,7 @@ export default function MenubarHeader() {
             placeholder="What are you looking for?"
             className="lg:max-w-[500px]  w-full md:hidden p-4 hover:bg-white"
             content="Shots"
-            iconSrc="/assets/arrow-down.png"
+            iconSrc="/assets/arrow-down1.png" 
             imgSrc="/assets/searchicon1.png"
           />
         </div>
