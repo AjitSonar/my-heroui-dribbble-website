@@ -173,7 +173,7 @@ export const footerMenu3 = [
   "Resources",
 ];
 
-export const categories = ["Discover", "Animation", "Branding", "Mobile",];
+export const categories = ["Discover", "Animation", "Branding", "Mobile"];
 
 export const socialIcons = [
   {

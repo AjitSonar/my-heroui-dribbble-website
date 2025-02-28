@@ -53,7 +53,7 @@ export default function Navbar() {
                 iconSrc="/assets/arrow-down1.png"
                 imgSrc="/assets/searchicon1.png"
                 className="lg:max-w-[600px] w-full hidden md:block p-4 placeholder:text-xs"
-                />
+              />
             </div>
             <div className="hidden flex-grow  lg:flex">
               <div className="flex space-x-2">
