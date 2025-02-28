@@ -20,7 +20,7 @@ export default function MenubarHeader() {
             imgSrc="/assets/searchicon1.png"
           />
         </div>
-        <div className="flex justify-between items-center  md:mt-20 px-4 md:px-20 h-16 w-full">
+        <div className="flex justify-between items-center  md:mt-20 px-4 md:px-[72px] h-16 w-full">
           <PopularButton
             radius="md"
             size="md"

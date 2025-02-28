@@ -12,9 +12,16 @@ export default function SearchInput(props) {
         size="lg"
         radius="full"
         variant="flat"
-        color="default"
-        // className={props.className}
-        className={`placeholder:text-xs sm:placeholder:text-sm  ${props.className}`}
+        color=""
+        className={props.className}
+        classNames={{
+          base: "placeholder:text-xs placeholder:text-gray-400 hover:bg-white",
+          inputWrapper:
+            "h-[54px] flex items-center data-[hover=true]:bg-white hover:border-pink-200 rounded-full border-2 border-transparent  rounded-full hover:shadow-[inset_0_0_0_10px_pink-50,0_0_20px_rgba(0,0,255,0.7)] group-data-[focus=true]:bg-white",
+          input:
+            "placeholder:text-sm placeholder:text-black focus:ring-blue-500",
+        }}
+        // className={`placeholder:text-xs sm:placeholder:text-sm placeholder:text-gray-400  ${props.className}`}
         endContent={
           <div className="flex items-center">
             <p className="text-black text-sm font-semibold">{props.content}</p>

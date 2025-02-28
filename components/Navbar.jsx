@@ -24,10 +24,15 @@ export default function Navbar() {
   return (
     <>
       <div className="flex flex-col w-full relative">
-        <div className="flex justify-between w-full px-6 md:px-10 items-center ">
+        <div className="flex justify-between w-full px-6 md:px-8 items-center ">
           <div className="flex flex-1 items-center justify-center">
             <div className="lg:hidden -ml-5 mt-3 ">
-              <Button variant="light" size="sm" onPress={handleClick}>
+              <Button
+                variant="light"
+                className="min-w-2"
+                size="sm"
+                onPress={handleClick}
+              >
                 {isOpen ? (
                   <X />
                 ) : (
@@ -46,7 +51,7 @@ export default function Navbar() {
                 alt="Logo"
               />
             </div>
-            <div className="ml-7 flex-grow">
+            <div className="ml-7 px-1 flex-grow">
               <SearchInput
                 placeholder="What are you looking for?"
                 content="Shots"
