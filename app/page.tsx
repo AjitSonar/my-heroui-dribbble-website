@@ -4,7 +4,7 @@ import Menubar from "../components/Menubar";
 export default function Home() {
   return (
     <section className="w-full h-screen relative flex flex-col">
-      <div className="lg:flex flex-col w-full h-16 md:h-20 bg-white fixed top-0 left-0 z-50">
+      <div className="lg:flex flex-col w-full h-[75px] md:h-20 bg-white fixed top-0 left-0 z-50">
         <Navbar />
       </div>
 

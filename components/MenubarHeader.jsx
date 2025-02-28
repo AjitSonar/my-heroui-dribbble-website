@@ -10,8 +10,8 @@ import { Divider } from "@heroui/react";
 export default function MenubarHeader() {
   return (
     <>
-      <div className="flex flex-col w-full flex-1">
-        <div className="mt-12 h-20 md:hidden">
+      <div className="flex flex-col mt-3 sm:mt-5 w-full flex-1">
+        <div className="mt-12  h-20 md:hidden">
           <SearchInput
             placeholder="What are you looking for?"
             className="lg:max-w-[500px]  w-full md:hidden p-4 hover:bg-white"
@@ -26,7 +26,7 @@ export default function MenubarHeader() {
             size="md"
             variant="bordered"
             className=" bg-white border-small h-[40px] w-[115px]"
-            IconSrc="/assets/arrow-down.png"
+            IconSrc="/assets/arrow-down1.png"
             IconClassName="w-4 h-4"
             content="Popular"
           />
@@ -36,7 +36,7 @@ export default function MenubarHeader() {
                 <RoundedButton
                   variant="light"
                   key={index}
-                  className="px-4 py-2 font-bold rounded-full hover:bg-gray-300"
+                  className="px-4 py-2 font-semibold rounded-full hover:bg-gray-300 "
                   content={category}
                 />
               ))}
@@ -47,7 +47,7 @@ export default function MenubarHeader() {
               radius="full"
               size="md"
               variant="bordered"
-              className=" bg-white border-small h-[40px] w-[100px]"
+              className=" bg-white border-small h-[40px]   w-[100px]"
               IconSrc="/assets/Filters.png"
               IconClassName="w-5 h-5"
               content="Filters"
@@ -60,7 +60,7 @@ export default function MenubarHeader() {
             <RoundedButton
               variant="light"
               key={index}
-              className="px-4 py-2 -mt-2.5 font-bold rounded-full hover:bg-gray-300"
+              className="px-4 py-2 -mt-2.5 font-semibold rounded-full hover:bg-gray-300"
               content={category}
             />
           ))}

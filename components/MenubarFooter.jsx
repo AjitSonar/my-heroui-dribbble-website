@@ -46,7 +46,7 @@ export default function MenubarFooter() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row  justify-center lg:justify-between items-center mt-12  mb-10 h-24 w-full">
+        <div className="flex flex-col md:flex-row  justify-center lg:justify-between items-center mt-12 md:mt-0 md:mb-0 mb-10 h-24 w-full">
           <div>
             <ul className="flex flex-wrap justify-center">
               {footerMenu2.map((items, index) => (

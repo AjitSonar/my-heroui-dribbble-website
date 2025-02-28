@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    title: "Dental Care UI",
+    title: "Generated games",
     studio: "Branding",
     team: true,
     like: 136,
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Dental Care UI",
+    title: "Object landing",
     studio: "Emote",
     team: true,
     like: 246,
@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Dental Care UI",
+    title: "Analytics dashboard",
     studio: "SlabPixel",
     team: true,
     like: 149,
@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Dental Care UI",
+    title: "Quantum Data",
     studio: "Phenomenon",
     team: true,
     like: 188,
@@ -41,7 +41,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Dental Care UI",
+    title: "Crypto Trading ",
     studio: "FANCY",
     team: true,
     like: 288,
@@ -51,7 +51,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Dental Care UI",
+    title: "NFT Marketplace ",
     studio: "RobDavis",
     team: true,
     like: 141,
@@ -61,7 +61,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "Dental Care UI",
+    title: "Timeloop Logo",
     studio: "We grow",
     team: true,
     like: 66,
@@ -71,7 +71,7 @@ export const projects = [
   },
   {
     id: 8,
-    title: "Dental Care UI",
+    title: "Infobip Startups ",
     studio: "tubik arts",
     team: true,
     like: 30,
@@ -81,7 +81,7 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Dental Care UI",
+    title: "Lofty Logo",
     studio: "Peppermint",
     team: true,
     like: 46,
@@ -91,7 +91,7 @@ export const projects = [
   },
   {
     id: 10,
-    title: "Dental Care UI",
+    title: "Case Study ",
     studio: "WixStudio",
     team: true,
     like: 82,
@@ -101,7 +101,7 @@ export const projects = [
   },
   {
     id: 11,
-    title: "Dental Care UI",
+    title: "Back up!",
     studio: "Inhouse",
     team: true,
     like: 47,
@@ -111,7 +111,7 @@ export const projects = [
   },
   {
     id: 12,
-    title: "Dental Care UI",
+    title: "Visual identity",
     studio: "Vektora",
     team: true,
     like: 63,
@@ -121,7 +121,7 @@ export const projects = [
   },
   {
     id: 13,
-    title: "Dental Care UI",
+    title: "Total Coverage",
     studio: "James",
     team: true,
     like: 22,
@@ -131,7 +131,7 @@ export const projects = [
   },
   {
     id: 14,
-    title: "Dental Care UI",
+    title: "Crypto Landing",
     studio: "ZeyoxStudio",
     team: true,
     like: 142,
@@ -141,7 +141,7 @@ export const projects = [
   },
   {
     id: 15,
-    title: "Dental Care UI",
+    title: "Medieval Tavern",
     studio: "Gregory",
     team: true,
     like: 56,
@@ -173,7 +173,7 @@ export const footerMenu3 = [
   "Resources",
 ];
 
-export const categories = ["Discover", "Animation", "Branding", "Mobile"];
+export const categories = ["Discover", "Animation", "Branding", "Mobile",];
 
 export const socialIcons = [
   {
@@ -203,8 +203,8 @@ export const socialIcons = [
 ];
 
 export const squareIconButtons = [
-  { content: "Explore", src: "/assets/arrow-down.png" },
-  { content: "Hire a Designer", src: "/assets/arrow-down.png" },
+  { content: "Explore", src: "/assets/arrow-down1.png" },
+  { content: "Hire a Designer", src: "/assets/arrow-down1.png" },
 ];
 
 export const squareButtons = [{ content: "Find Jobs" }, { content: "Blog" }];

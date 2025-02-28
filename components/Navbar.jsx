@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="flex flex-col w-full relative">
         <div className="flex justify-between w-full px-6 md:px-10 items-center ">
           <div className="flex flex-1 items-center justify-center">
-            <div className="lg:hidden -ml-5 ">
+            <div className="lg:hidden -ml-5 mt-3 ">
               <Button variant="light" size="sm" onPress={handleClick}>
                 {isOpen ? (
                   <X />
@@ -42,7 +42,7 @@ export default function Navbar() {
             <div>
               <Icon
                 src="/assets/logo.jpeg"
-                className="w-25 h-14 -mt-2 "
+                className="w-25 h-14 md:-mt-4  "
                 alt="Logo"
               />
             </div>
@@ -50,16 +50,10 @@ export default function Navbar() {
               <SearchInput
                 placeholder="What are you looking for?"
                 content="Shots"
-                iconSrc="/assets/arrow-down.png"
+                iconSrc="/assets/arrow-down1.png"
                 imgSrc="/assets/searchicon1.png"
-                className="lg:max-w-[600px] w-full hidden md:block p-4"
-                // classNames={{
-                //   // base: "w-full border border-gray-300 rounded-lg p-10",
-                //   label: "text-gray-700 font-semibold text-sm",
-                //   input: "w-full p-2 rounded-full focus:ring-1 focus:ring-blue-500 border-gray-300 hover:bg-white transition-all",
-                //   // errorMessage: "text-red-500 text-xs mt-1"
-                // }}
-              />
+                className="lg:max-w-[600px] w-full hidden md:block p-4 placeholder:text-xs"
+                />
             </div>
             <div className="hidden flex-grow  lg:flex">
               <div className="flex space-x-2">
@@ -70,7 +64,7 @@ export default function Navbar() {
                     variant="light"
                     src={button.src}
                     className="w-4 h-4"
-                    BtnClassName="font-bold"
+                    BtnClassName="font-semibold"
                     content={button.content}
                   />
                 ))}
@@ -82,7 +76,7 @@ export default function Navbar() {
                     key={index}
                     size="md"
                     variant="light"
-                    className="font-bold"
+                    className="font-semibold"
                     content={button.content}
                   />
                 ))}
@@ -91,7 +85,7 @@ export default function Navbar() {
           </div>
           <div className="flex">
             <LightButton
-              className="font-bold hidden mt-6 sm:mt-3 md:mt-1 sm:block"
+              className="font-semibold hidden mt-6 sm:mt-3 md:mt-1 md:block"
               size="md"
               variant="light"
               content="Sign up"
@@ -100,14 +94,14 @@ export default function Navbar() {
             <Login
               color="default"
               radius="full"
-              size="lg"
+              size="md"
               variant="solid"
-              className="bg-black text-[14px] w-[90px] h-[40px] text-white mt-2 md:mt-0"
+              className="bg-black text-[14px] w-[90px] h-[40px] md:w-[90px] md:h-[48px] max-w-[90px] text-white mt-3 md:mt-0"
               content=" Log in"
             />
           </div>
           {isOpen && (
-            <div className="lg:hidden bg-white  pt-2 border-1 mt-12 h-auto w-full flex flex-col items-start absolute top-3 left-0 z-50">
+            <div className="lg:hidden bg-white  pt-2 border-1 mt-14 h-auto w-full flex flex-col items-start absolute top-3 left-0 z-50">
               <div className="">
                 <div className="flex flex-col">
                   {squareIconButtons.map((button, index) => (
