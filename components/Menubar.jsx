@@ -12,7 +12,7 @@ export default function Menubar() {
         <MenubarBody />
       </div>
       <div>
-        <MenubarFooter />
+        <MenubarFooter /> 
       </div>
     </div>
   );
